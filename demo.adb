@@ -14,8 +14,16 @@ begin
    new_line;
    end loop;
    end printlines;
+   
+--procedure half(given: natural) is
+--begin 
+--   Put_Line(given / 2 );
+--end half;   
+   
+   
 begin
     printlines(2, 20, '=');
    -- do something 
     printlines(3, 20, '-');
+--    half (10) ;
 end demo;
