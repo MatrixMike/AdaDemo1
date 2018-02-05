@@ -10,6 +10,9 @@ use Ada.Text_IO;
 procedure Hello is
 
 begin
+   for i in 1..10 loop
+      put('z');
+     end loop;
    Put_Line("Hello Mike from Ada");
    Put_Line("second line");
 end hello;
