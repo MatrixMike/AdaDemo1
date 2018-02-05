@@ -1,4 +1,6 @@
-procedure adaDemo2 is
+with Ada.Text_IO;
+use Ada.Text_IO;
+procedure adademo2 is
 
 type Day_type   is range    1 ..   31;
 type Month_type is range    1 ..   12;
@@ -15,33 +17,25 @@ type Date is
 subtype Working_Hours is Hours range 0 .. 12;            -- at most 12 Hours to work a day
 subtype Working_Day is Weekday range Monday .. Friday;   -- Days to work
 
-begin
+--begin
 
 --Work_Load: constant array(Working_Day) of Working_Hours  -- implicit type declaration
 --   := (Friday => 6, Monday => 4, others => 10);           -- lookup table for working hours with initialization
    
 -- while a is not equal to b, loop.
-while a /= b loop
-  Ada.Text_IO.Put_Line ("Waiting");
-end loop;
+--while a /= b loop
+--  Ada.Text_IO.Put_Line ("Waiting");
+--end loop;
 
-if a > b then
-  Ada.Text_IO.Put_Line ("Condition met");
-else
-  Ada.Text_IO.Put_Line ("Condition not met");
-end if;
+--make into a procedure or function
+--if a > b then
+--  Ada.Text_IO.Put_Line ("Condition met");
+--else
+--  Ada.Text_IO.Put_Line ("Condition not met");
+--end if;
 
-for i in 1 .. 10 loop
-  Ada.Text_IO.Put ("Iteration: ");
-  Ada.Text_IO.Put (i);
-  Ada.Text_IO.Put_Line;
-end loop;
-
-loop
-  a := a + 1;
-  exit when a = 10;
-end loop;
-
+procedure testCase (i: Natural) is
+begin 
 case i is
   when 0 => Ada.Text_IO.Put ("zero");
   when 1 => Ada.Text_IO.Put ("one");
@@ -49,6 +43,23 @@ case i is
   -- case statements have to cover all possible cases:
   when others => Ada.Text_IO.Put ("none of the above");
 end case;
+end testCase;
+
+procedure forLoop() is
+begin
+for i in 1 .. 10 loop
+  Ada.Text_IO.Put ("Iteration: ");
+  Ada.Text_IO.Put (i);
+  Ada.Text_IO.Put_Line;
+end loop;
+end forLoop;
+
+loop
+  a := a + 1;
+  exit when a = 10;
+end loop;
+
+
 
 for aWeekday in Weekday'Range loop               -- loop over an enumeration
    Put_Line ( Weekday'Image(aWeekday) );         -- output string representation of an enumeration

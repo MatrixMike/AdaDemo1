@@ -1,4 +1,4 @@
-procedure adaDemo2 is
+procedure adademo2 is
 
 type Day_type   is range    1 ..   31;
 type Month_type is range    1 ..   12;
