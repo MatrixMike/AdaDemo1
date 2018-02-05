@@ -1,4 +1,4 @@
-procedure testCase (i: Natural) is
+procedure testcase (i: Natural) is
 begin 
 case i is
   when 0 => Ada.Text_IO.Put ("zero");

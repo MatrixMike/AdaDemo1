@@ -22,7 +22,7 @@ begin
    
    
 begin
-    printlines(2, 20, '=');
+    printlines(2, 12, '=');
    -- do something 
     printlines(3, 20, '-');
 --    half (10) ;
