@@ -1,5 +1,6 @@
 with Ada.Text_IO;
 use Ada.Text_IO;
+use Ada.Numerics.Elementary_Functions;
 
 --procedure call_recur is
 --function fac(n: Natural) is
@@ -13,7 +14,7 @@ use Ada.Text_IO;
 --end fac;
 
 function Square_Root (X : in Float) return Float is
-     use Ada.Numerics.Elementary_Functions;
+use Ada.Numerics.Elementary_Functions;
 begin
      if X < 0.0 then
         return -1.0;
