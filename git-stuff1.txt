@@ -1,0 +1,19 @@
+ 2000  ls -lc
+ 2001  ./hello 
+ 2002  git status
+ 2003  git add hello.adb
+ 2004  git status
+ 2005  git commit -m "early commit"
+ 2006  git config --global user.email "m...@icloud.com"
+ 2007  git config --global user.name "MikeH"
+ 2008  git commit -m "early commit"
+ 2009  git status
+ 2010  git log
+ 2011  git push
+ 2012  git pull
+ 2013  git pull https://github.com/MatrixMike/AdaDemo1
+ 2014  git status
+ 2015  git push
+ 2016  git remote add AdaDemo1 https://github.com/MatrixMike/AdaDemo1
+ 2017  git push AdaDemo1
+ 2018  history 
