@@ -1,4 +1,5 @@
 with Ada.Text_IO;
+with Ada.Numerics.Elementary_Functions;
 use Ada.Text_IO;
 use Ada.Numerics.Elementary_Functions;
 
