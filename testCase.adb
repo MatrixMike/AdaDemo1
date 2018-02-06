@@ -7,6 +7,6 @@ case i is
   -- case statements have to cover all possible cases:
   when others => Ada.Text_IO.Put ("none of the above");
 end case;
-end testCase;
+end testcase;
 
 
