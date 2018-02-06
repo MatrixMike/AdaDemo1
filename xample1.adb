@@ -3,9 +3,10 @@ with Ada.Text_IO; use Ada.Text_IO;
 package body xample1 is
     procedure SayWelcome(x : in Integer) is
     begin
-    for i in 1 .. 10 loop
+    for i in 1 .. x loop
 	put("We say welcome to you!!!");
 --	put(i);
+	Put_Line(" Number " & Integer'Image(i));
 	new_line;
 	end loop;
 

@@ -6,5 +6,5 @@ use xample1;
 procedure xercise is
 
 begin
-   SayWelcome(1);
+   SayWelcome(6);
 end xercise;
