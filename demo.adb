@@ -4,6 +4,7 @@ use Ada.Text_IO;
 --http://www.radford.edu/nokie/classes/320/Tour/procs.funcs.html
 
 procedure demo is
+
 procedure printlines(numLines, numChars: Natural; c: Character) is
 begin
    for i in 1 .. numLines loop
@@ -20,9 +21,10 @@ begin
 --   Put_Line(given / 2 );
 --end half;   
    
-   
+-- no need for declare here
+   upper : constant integer := 12;
 begin
-    printlines(2, 12, '=');
+    printlines(2, upper, '=');
    -- do something 
     printlines(3, 20, '-');
 --    half (10) ;

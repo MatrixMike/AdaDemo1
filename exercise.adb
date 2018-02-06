@@ -3,6 +3,7 @@ with FunctionX;
 use Ada.Text_IO;
 use FunctionX;
 -- http://www.functionx.com/ada/Lesson06.htm
+-- http://www.functionx.com/ada/Lesson01.htm
 procedure Exercise is
   StaffMember : Employee;
 
