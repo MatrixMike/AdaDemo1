@@ -4,7 +4,9 @@ package body xample1 is
     procedure SayWelcome(x : in Integer) is
     begin
     for i in 1 .. 10 loop
-	put_line("We say welcome to you!!!");
+	put("We say welcome to you!!!");
+--	put(i);
+	new_line;
 	end loop;
 
     end SayWelcome;
