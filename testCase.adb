@@ -1,4 +1,4 @@
-procedure testcase (i: Natural) is
+procedure testCase (i: Natural) is
 begin 
 case i is
   when 0 => Ada.Text_IO.Put ("zero");
@@ -7,6 +7,6 @@ case i is
   -- case statements have to cover all possible cases:
   when others => Ada.Text_IO.Put ("none of the above");
 end case;
-end testcase;
+end testCase;
 
 

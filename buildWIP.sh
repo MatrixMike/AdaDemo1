@@ -1,0 +1,3 @@
+gnat compile demo.adb 
+
+
