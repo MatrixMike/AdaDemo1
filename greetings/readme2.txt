@@ -7,3 +7,12 @@ gcc-4.9 -c *.adb     will work
 then bind gmain
 then link gmain
 
+
+watchout for ability of different version of gcc 
+
+exec gnatlink <no args> for help with 4.9
+
+So I have some incompatibility between machines - never mind...
+I now have a framework for creating Ada programs.
+see https://gcc.gnu.org/onlinedocs/
+
