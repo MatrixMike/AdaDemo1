@@ -3,8 +3,8 @@ rm gmain
 rm *.o 
 rm *.ali
 ls -lctrh
-gcc-4.9 -c gmain.adb
-gcc-4.9 -c greetings.adb 
+gcc -c gmain.adb
+gcc -c greetings.adb 
 ls -lctrh
 gnatbind gmain
 ls -lctrh
