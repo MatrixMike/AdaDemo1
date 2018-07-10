@@ -5,4 +5,11 @@ I created a repo on github and then proceeded to 'pull' it down to the RPi. I so
 The RPi image I used was configured to start on command line mode. To start the GUI - startx.
 This revealed in the 'other' run options the GNAT programming studio.
 
+<ol>working:
+<li>demo.adb
+</li><li>hello2.adb
+</li><li>greetings.adb
+</li>
+</ol>
+
 
