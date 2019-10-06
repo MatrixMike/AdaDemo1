@@ -1,0 +1,50 @@
+
+ 1975  cat vowel1.c 
+ 1976  opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc ~/ccode/vowel1.c 
+ 1977  ~/opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc ~/ccode/vowel1.c 
+ 1978  ls -lctrh
+ 1979  cd ~/AdaDemo1/
+ 1980  ls -lctrh
+ 1981  tree demo4/
+ 1982  tree demo3/
+ 1983  ~/opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc demo3/demo.adb 
+ 1984  ~/opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc demo3/demo.adb -c
+ 1985  ~/opt/GNAT/2019-arm-elf/bin/arm-eabi-gcc demo3/demo.adb -S
+ 1986  ls -lctrh
+ 1987  cat demo.s 
+ 1988  cat ~/.profile 
+ 1989  gedit ~/.profile &
+ 1990  git clone https://github.com/MatrixMike/Ada_Drivers_Library.git
+ 1991  ls -lctrh
+ 1992  cd  Ada_Drivers_Library/
+ 1993  ls -lctrh
+ 1994  cat readmeMJH.md 
+ 1995  gnat
+ 1996  gps
+ 1997  ls -lctrh
+ 1998  gedit readmeMJH.md &
+ 1999  echo $PATH
+ 2000  export PATH="$HOME/opt/2019-arm-elf/bin:$PATH"
+ 2001  echo $PATH
+ 2002  export PATH="$HOME/opt/GNAT/2019-arm-elf/bin:$PATH"
+ 2003  echo $PATH
+ 2004  arm-eabi-gnat
+ 2005  arm-eabi-gnat compile
+ 2006  arm-eabi-gnatname 
+ 2007  arm-eabi-gnatname -v
+ 2008  echo $PATH
+ 2009  gprconfig 
+ 2010  gprinstall --help
+ 2011  gprinstall --version
+ 2012  whereis gprname
+ 2013  whereis gnat
+ 2014  whereis gprbuild
+ 2015  gprbuild 
+ 2016  cd ~/AdaDemo1/
+ 2017  cd demo3/
+ 2018  tree
+ 2019  gprbuild 
+ 2020  gprbuild --help
+ 2021  gprbuild -c
+ 2022  history 
+ 2023  history > historyAda1.txt
