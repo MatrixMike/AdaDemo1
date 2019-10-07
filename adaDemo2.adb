@@ -1,4 +1,4 @@
-procedure adademo2 is
+procedure adaDemo2 is
 
 type Day_type   is range    1 ..   31;
 type Month_type is range    1 ..   12;
@@ -57,5 +57,5 @@ for aWeekday in Weekday'Range loop               -- loop over an enumeration
                Working_Hours'Image (Work_Load(aWeekday)) ); -- access into a lookup table
    end if;
 end loop;
-end AdaDemo2;
+end adaDemo2;
 

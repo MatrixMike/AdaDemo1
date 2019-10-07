@@ -12,7 +12,7 @@ procedure Hello is
 begin
    for i in 1..10 loop
       put('z');
-     end loop;
+   end loop;
    Put_Line("");
    Put_Line("Hello Mike from Ada");
    Put_Line("second line");
