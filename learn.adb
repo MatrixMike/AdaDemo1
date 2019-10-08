@@ -14,7 +14,7 @@ begin
 
 -- Initialize the generator from the system clock
    Ada.Numerics.Float_Random.Reset (My_Generator);
-   for I in 1..800 loop 
+   for I in 1..8 loop 
    -- Get a random float between 0.0 and 1.0
        Random_Value := Ada.Numerics.Float_Random.Random (My_Generator);    -- Scale the float to between 100.0 and 250.0 
    Random_Value := 150.0 * Random_Value + 100.0;
