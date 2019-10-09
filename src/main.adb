@@ -39,9 +39,13 @@
 with Display;
 
 procedure Main is
+   subtype Name_String is String (1..10);
+   Name : Name_String;
 begin
 
+   Name:="Mildred   ";
    loop
       Display.Scroll_Text ("Made with Ada! by Mike  ");
+      --      Display.Scroll_Text (Name_String);
    end loop;
 end Main;
