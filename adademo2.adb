@@ -37,9 +37,14 @@ begin
 --  Ada.Text_IO.Put_Line ("Condition not met");
 --end if;
 -- g := Ada.Numerics.Generic_Complex_Elementary_Functions.Sqrt(fl1);
-   g := Ada.Numerics.Elementary_Functions.Sqrt ( fl1  );
-   Ada.Float_Text_IO.Put(g,5,3,0);
-     Ada.Text_IO.Put_Line("");
+for i in 2..10 loop
+   g := Ada.Numerics.Elementary_Functions.Sqrt ( float(i)  );
+   Ada.Float_Text_IO.Put(g,5,4,0);
+   Ada.Text_IO.Put_Line("");
+   end loop;
+--       1.414
+--Iteration: 
+
 for i in 1 .. 10 loop
   Ada.Text_IO.Put ("Iteration: ");
   --Ada.Text_IO.Put (i);

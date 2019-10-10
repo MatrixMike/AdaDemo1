@@ -37,6 +37,10 @@
 --  file using SVD2Ada: https://github.com/AdaCore/svd2ada
 
 with Display;
+with Ada.Text_Io; use Ada.Text_Io;
+--with Ada.Text_Io.Editing; use Ada.Text_Io.Editing;
+--with Ada.Numerics.Elementary_Functions;
+--with Ada.Float_Text_IO;
 
 procedure Main is
    subtype Name_String is String (1..10);
