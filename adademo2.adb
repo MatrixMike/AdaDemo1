@@ -1,5 +1,8 @@
 with Ada.Text_IO;
-use Ada.Text_IO;
+--use Ada.Text_IO;
+with Ada.Numerics.Elementary_Functions;
+with Ada.Float_Text_IO;
+
 procedure adaDemo2 is
 
 type Day_type   is range    1 ..   31;
@@ -16,9 +19,10 @@ type Date is
 
 subtype Working_Hours is Hours range 0 .. 12;            -- at most 12 Hours to work a day
 subtype Working_Day is Weekday range Monday .. Friday;   -- Days to work
-
+   fl1 : float;
+   g   : float;
 begin
-
+   fl1 := 2.0;
 --Work_Load: constant array(Working_Day) of Working_Hours  -- implicit type declaration
 --   := (Friday => 6, Monday => 4, others => 10);           -- lookup table for working hours with initialization
    
@@ -32,7 +36,10 @@ begin
 --else
 --  Ada.Text_IO.Put_Line ("Condition not met");
 --end if;
-
+-- g := Ada.Numerics.Generic_Complex_Elementary_Functions.Sqrt(fl1);
+   g := Ada.Numerics.Elementary_Functions.Sqrt ( fl1  );
+   Ada.Float_Text_IO.Put(g,5,3,0);
+     Ada.Text_IO.Put_Line("");
 for i in 1 .. 10 loop
   Ada.Text_IO.Put ("Iteration: ");
   --Ada.Text_IO.Put (i);
@@ -52,6 +59,7 @@ case i is
   when others => Ada.Text_IO.Put ("none of the above");
   Ada.Text_IO.Put (" _ ");
 end case;
+  Ada.Text_IO.Put (" x ");
 end loop;
 
 --for aWeekday in Weekday'Range loop               -- loop over an enumeration

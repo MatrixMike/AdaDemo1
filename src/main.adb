@@ -41,8 +41,9 @@ with Display;
 procedure Main is
    subtype Name_String is String (1..10);
    Name : Name_String;
+   fl1 : float;
 begin
-
+   fl1 := 2.0;
    Name:="Mildred   ";
    loop
       Display.Scroll_Text ("Made with Ada! by Mike  ");
