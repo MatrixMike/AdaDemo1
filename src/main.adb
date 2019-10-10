@@ -46,6 +46,8 @@ procedure Main is
    subtype Name_String is String (1..10);
    Name : Name_String;
    fl1 : float;
+   type   Cog is new Integer;
+   type rearGears is array(Cog)   of Cog ;
 begin
    fl1 := 2.0;    -- testing floating point on BBC
    fl1 := fl1 * 2.0;

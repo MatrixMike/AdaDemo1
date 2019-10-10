@@ -16,13 +16,16 @@ type Date is
      Month : Month_type;
      Year  : Year_type;
    end record;
-
+type   Cog is new Integer;
+type rearGears is array(Cog)   of Cog ;
 subtype Working_Hours is Hours range 0 .. 12;            -- at most 12 Hours to work a day
 subtype Working_Day is Weekday range Monday .. Friday;   -- Days to work
    fl1 : float;
    g   : float;
+  
 begin
    fl1 := 2.0;
+--   rearGears :=  (12,14,16,18,22,26,40);
 --Work_Load: constant array(Working_Day) of Working_Hours  -- implicit type declaration
 --   := (Friday => 6, Monday => 4, others => 10);           -- lookup table for working hours with initialization
    
@@ -44,6 +47,8 @@ for i in 2..10 loop
    end loop;
 --       1.414
 --Iteration: 
+--for f in range 
+
 
 for i in 1 .. 10 loop
   Ada.Text_IO.Put ("Iteration: ");
