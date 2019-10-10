@@ -35,14 +35,14 @@ begin
 
 for i in 1 .. 10 loop
   Ada.Text_IO.Put ("Iteration: ");
-  Ada.Text_IO.Put (i);
-  Ada.Text_IO.Put_Line;
+  --Ada.Text_IO.Put (i);
+  Ada.Text_IO.Put_Line("");
 end loop;
 
-loop
-  a := a + 1;
-  exit when a = 10;
-end loop;
+--loop
+--  a := a + 1;
+--  exit when a = 10;
+-- end loop;
 
 case i is
   when 0 => Ada.Text_IO.Put ("zero");
