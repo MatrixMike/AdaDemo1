@@ -44,16 +44,26 @@ with Ada.Text_Io; use Ada.Text_Io;
 
 procedure Main is
    subtype Name_String is String (1..10);
-   Name : Name_String;
+   Name1 : Name_String;
    fl1 : float;
    type   Cog is new Integer;
    type rearGears is array(Cog)   of Cog ;
+   Name2 : String := Integer'Image(42); -- string padded with spaces
+   Name3 : Name_String ;  --:= Float'Image(3.4);
+   Name4 : Name_String;    --:= Float'Image(fl1);
+   type T is array (Integer range <>) of Integer;
+   A2 : T (1..10);
 begin
+
    fl1 := 2.0;    -- testing floating point on BBC
    fl1 := fl1 * 2.0;
-   Name:="Mildred   ";
+ --  Name4 := Float'Image(fl1);
+   A2(3) := 8;
+ --  Name3 := Float'Image(fl1);
+
+   Name1:="Mildred   ";
    loop
-      Display.Scroll_Text ("Made with Ada! by Mike  ");
+      Display.Scroll_Text ("  Made with Ada! by Mike  " & Name1 & Name2);
       --      Display.Scroll_Text (Name_String);
       fl1 := 2.0;    -- testing floating point on BBC
       fl1 := fl1 * 2.0;
