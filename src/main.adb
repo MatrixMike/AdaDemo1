@@ -53,7 +53,7 @@ begin
    fl1 := fl1 * 2.0;
    Name:="Mildred   ";
    loop
-      Display.Scroll_Text ("Made with Ada! by Mike  ");
+      Display.Scroll_Text ("Made with Ada! by Mike  " & Name);
       --      Display.Scroll_Text (Name_String);
       fl1 := 2.0;    -- testing floating point on BBC
       fl1 := fl1 * 2.0;
