@@ -49,9 +49,18 @@ procedure Main is
    type   Cog is new Integer;
    type rearGears is array(Cog)   of Cog ;
    Name2 : String := Integer'Image(42); -- string padded with spaces
+   Name3 : Name_String ;  --:= Float'Image(3.4);
+   Name4 : Name_String;    --:= Float'Image(fl1);
+   type T is array (Integer range <>) of Integer;
+   A2 : T (1..10);
 begin
+
    fl1 := 2.0;    -- testing floating point on BBC
    fl1 := fl1 * 2.0;
+ --  Name4 := Float'Image(fl1);
+   A2(3) := 8;
+ --  Name3 := Float'Image(fl1);
+
    Name1:="Mildred   ";
    loop
       Display.Scroll_Text ("  Made with Ada! by Mike  " & Name1 & Name2);
